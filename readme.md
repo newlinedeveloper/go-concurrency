@@ -19,3 +19,15 @@ go run main.go
 http://localhost:8080/book
 
 ```
+
+#### Dockerize the go application
+
+```
+# To build docker image for go application 
+docker build -t go-app .
+
+
+# To run the docker image
+docker run --name go-app -p 8080:8080 go-app
+
+```
