@@ -31,3 +31,16 @@ docker build -t go-app .
 docker run --name go-app -p 8080:8080 go-app
 
 ```
+
+
+#### K8 deployment
+
+```
+cd k8
+
+# To run deployment and service configuration for this docker image 
+
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+```
